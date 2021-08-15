@@ -20,7 +20,7 @@
       $('#summernote').summernote({
         height: 200,
         hint: {
-          match: /^(\w{2,})$/,
+          match: /[^](\w{2,})$/,
           search: function(keyword, callback) {
               $.ajax({
                   
